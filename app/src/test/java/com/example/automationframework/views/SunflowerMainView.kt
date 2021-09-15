@@ -26,4 +26,6 @@ class SunflowerMainView (private val driver: AndroidDriver<MobileElement>){
     fun tapPlantList() = Locators(driver).clickableElementID(plantListBtn).click()
 
     fun tapMyGarden() = Locators(driver).clickableElemXPath(myGardenBtn).click()
+
+//    adding a comment to see if keys are fixed
 }
