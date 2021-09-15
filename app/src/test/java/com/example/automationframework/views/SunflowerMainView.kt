@@ -13,7 +13,7 @@ class SunflowerMainView (private val driver: AndroidDriver<MobileElement>){
     //    elems
     private val myGardenBtn = "//androidx.appcompat.app.ActionBar.Tab[@content-desc=\"My garden\"]/android.widget.TextView\n"
 
-    private val plantListBtn = "//androidx.appcompat.app.ActionBar.Tab[@content-desc=\"Plant list\"]/android.widget.TextView\n"
+    private val plantListBtn = "com.google.samples.apps.sunflower:id/add_plant"
 
     private val sunflowerHdr = "//android.widget.FrameLayout[@content-desc=\"Sunflower\"]/android.view.ViewGroup/android.widget.TextView\n"
 
@@ -23,7 +23,7 @@ class SunflowerMainView (private val driver: AndroidDriver<MobileElement>){
     fun getMyGardenSelectedStatus() :String = Locators(driver).visibleXPath(myGardenBtn).getAttribute("selected")
 
     //    actions
-    fun tapPlantList() = Locators(driver).clickableElemXPath(plantListBtn).click()
+    fun tapPlantList() = Locators(driver).clickableElementID(plantListBtn).click()
 
     fun tapMyGarden() = Locators(driver).clickableElemXPath(myGardenBtn).click()
 }
