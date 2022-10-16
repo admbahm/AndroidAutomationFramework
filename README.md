@@ -1,7 +1,7 @@
 # AutomationFramework
 Android Automation Framework
 
-<h1 align="center">Hi 👋, I'm Adam</h1>
+<h1 align="center">Hi 👋 I'm Adam</h1>
 <h3 align="center">This is an Appium framework written in Kotlin</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=admbahm&label=Profile%20views&color=0e75b6&style=flat" alt="admbahm" /> </p>
